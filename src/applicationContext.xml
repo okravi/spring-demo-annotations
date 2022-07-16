@@ -9,6 +9,8 @@
 	<!-- load the properties file -->
 	<context:property-placeholder location="classpath:sport.properties"/>
     <!-- Define your beans here -->
+    
+    
    
    	<!-- add entry to enable component scanning -->
     
