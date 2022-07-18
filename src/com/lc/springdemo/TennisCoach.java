@@ -6,12 +6,26 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	@Autowired
 	private FortuneService fortuneService;
 	
-	@Autowired
+	public TennisCoach() {}
+	
+	/*
+	//@Autowired can be omitted if only there is only one public constructor
+	@Autowired 
 	public TennisCoach(FortuneService theFortuneService) {
 		fortuneService = theFortuneService;
 	}
+	*/
+	
+	//define a setter method for injections
+	/*
+	@Autowired
+	public void setFortuneService(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
+	*/
 
 	@Override
 	public String getDailyWorkout() {
